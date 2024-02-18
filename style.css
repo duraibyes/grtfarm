@@ -130,3 +130,29 @@
     font-weight: 600;
     color: #085833;
 }
+
+.logo-class {
+  position: absolute;
+}
+
+.logo-class > a > img {
+  max-height: 150px;
+}
+
+.section-bg4 {
+  padding-bottom:40px;
+}
+
+@media screen and (max-width: 1078px) {
+  .logo-class {
+    position: unset;
+    margin:0;
+
+  }
+  .logo-class > a > img {
+    max-height: 65px;
+  }
+  .section-bg4 {
+    padding-top:20px;
+  }
+}
