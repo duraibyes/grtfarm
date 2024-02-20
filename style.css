@@ -22,7 +22,7 @@
 }
 
 .ftco-category .category-wrap .text {
-  background: rgba(254, 185, 0, 0.8);;
+  background: rgba(254, 185, 0, 0.8);
 }
 
 .hero-wrap,
@@ -74,7 +74,7 @@
   border-left: 20px solid green;
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .arrow-right:after {
     position: absolute;
     bottom: -10px;
@@ -127,8 +127,8 @@
 }
 
 .service-item > p {
-    font-weight: 600;
-    color: #085833;
+  font-weight: 600;
+  color: #085833;
 }
 
 .logo-class {
@@ -140,20 +140,19 @@
 }
 
 .section-bg4 {
-  padding-bottom:40px;
+  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 1078px) {
   .logo-class {
     position: unset;
-    margin:0;
-
+    margin: 0;
   }
   .logo-class > a > img {
     max-height: 65px;
   }
   .section-bg4 {
-    padding-top:20px;
+    padding-top: 20px;
   }
 }
 
@@ -168,4 +167,25 @@
 
 .bl-border {
   border-left: 2px solid gold;
+}
+
+table {
+  width: 100%;
+  font-size: 14px;
+  color: #184818;
+  margin: 25px;
+}
+
+tbody, td, tfoot, th, thead, tr {
+  padding: 5px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.enquiry-btn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #11b334;
+  color: white;
+  box-shadow: 1px 2px 13px 3px #9add9a;
 }

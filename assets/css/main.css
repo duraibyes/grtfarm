@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
+  --color-primary: #09fd8a;
   --color-secondary: #52565e;
 }
 
@@ -69,7 +69,7 @@ section {
   /* background-color: #f5f6f7;
    */
    /* background-color: #38ab06c7; */
-  background-image: linear-gradient(9deg, #6cf3b4, #4bfb1e3d);
+   background-image: linear-gradient(9deg, #d6fdeb, #4bfb1e3d);
 }
 
 .section-bg1 {
@@ -195,7 +195,7 @@ section {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 75px;
   z-index: 99999;
   background: var(--color-primary);
   width: 40px;
@@ -515,7 +515,7 @@ section {
 
   .mobile-nav-show {
     position: relative;
-    color: #fff;
+    color: #198754;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -550,6 +550,17 @@ section {
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
     z-index: 9996;
+  }
+  header {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .header-logo {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .header-menu {
+    padding-right: 0px !important;
   }
 }
 
