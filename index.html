@@ -39,17 +39,17 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex">
-      <div class=" logo-class" style="top: 27px;">
-        <a href="#" class="d-flex align-items-center">
+  <header id="header" class="header d-flex align-items-center px-5">
+    <div class="container-fluid container-xl d-flex px-5">
+      <div class=" logo-class px-4" style="top: 1px;">
+        <a href="#" class="d-flex align-items-center" style="width: 91px;">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/bg/newlogobg.png" alt="">
+          <img src="assets/img/bg/newlogobg.png" alt="" style="width:100%">
           <!-- <h1>Green Revolution Techagrofarms<span>.</span></h1> -->
         </a>
       </div>
     </div>
-    <div class=" d-flex align-items-center justify-content-between">
+    <div class=" d-flex align-items-center justify-content-between pe-5">
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
@@ -57,28 +57,25 @@
           <li><a href="#" class="active">Home</a></li>
           <li><a href="#farming">Farming</a></li>
           <li><a href="#invest">Invest</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section class="section-bg4" style="">
-
-    <div class="row justify-content-center ">
-      <div class="col-lg-12">
-        <div class="container">
-          <video controls autoplay style="width: 100%;height:500px;">
-            <source src="assets/banner.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+  <section class="" style="padding-bottom: 0px;">
+    <div class="main-banner" id="top">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/banner.mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <!-- <h2>Title</h2> -->
+          </div>
       </div>
-    </div>
-  </section><!-- End Hero Section -->
+  </div>
+  </section>
 
   <main id="main">
     <!-- ======= Alt Services Section ======= -->
@@ -132,7 +129,8 @@
         </div>
 
       </div>
-    </section><!-- End Alt Services Section -->
+    </section>
+    <!-- End Alt Services Section -->
 
     <section id="alt-services-2" class="alt-services section-bg">
       <div class="container " data-aos="fade-up">
@@ -189,38 +187,57 @@
           <div class="col-lg-12 d-flex flex-column justify-content-center">
             <h3>Difference Between Normal agriculture & Polyhouse Modern farming</h3>
 
-            <div class="row">
-              <div class="col-sm-6">
-                <p> In Normal Agriculture We can seed only 1000 per Acre (ex: seeding cucumber)</p>
-              </div>
+            <div class="row pt-3" data-aos="fade-up" data-aos-delay="100">
               <div class="col-sm-6">
                 <p>
+                  <span class="diff-point pe-3">
+                    <i class="fa-solid fa-seedling text-success"></i>
+                  </span> 
+                  In Normal Agriculture We can seed only 1000 per Acre (ex: seeding cucumber)</p>
+              </div>
+              <div class="col-sm-6 bl-border">
+                <p>
+                  <span class="diff-point pe-3">
+                    <i class="fa-solid fa-seedling text-success"></i>
+                  </span>
                   In Vertical Farming We can seed upto 8000 per Acre.
                 </p>
               </div>
             </div>
 
-            <div class="row">
+            <div class="row pt-3" data-aos="fade-up" data-aos-delay="200">
               <div class="col-sm-6">
                 <p> 
+                  <span class="diff-point pe-3">
+                    <i class="fa-solid fa-seedling text-success"></i>
+                  </span>
                   Since there is no controlled climate and pest control the yield would be 6 tonnes per acre for yield.
                 </p>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 bl-border">
                 <p>
+                  <span class="diff-point pe-3">
+                    <i class="fa-solid fa-seedling text-success"></i>
+                  </span>
                   Here, It would be 60 tonnes per yield per acre.( x 10 times more than normal agriculture).
                 </p>
               </div>
             </div>
 
-            <div class="row">
+            <div class="row pt-3" data-aos="fade-up" data-aos-delay="300">
               <div class="col-sm-6">
                 <p> 
+                  <span class="diff-point pe-3">
+                    <i class="fa-solid fa-seedling text-success"></i>
+                  </span>
                   Normal Irrigation and Soil Management.
                 </p>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 bl-border">
                 <p>
+                  <span class="diff-point pe-3">
+                    <i class="fa-solid fa-seedling text-success"></i>
+                  </span>
                   Drip Irrigation and Grow bag & Cocopit is used on behalf of soil.
                 </p>
               </div>
@@ -228,7 +245,57 @@
         </div>
       </div>
     </section>
+    <section id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
 
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/bg/invest.png);background-size: contain;"
+            data-aos="zoom-in" data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>Why Should I invest in GRT</h3>
+            <div class="icon-box d-flex position-relative align-items-center" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-bar-chart flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Highest Returns on Real EState</a></h4>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative  align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Your Investment is 100% Safe</a></h4>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative  align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-bar-chart-line-fill flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Highess appreciating Asset - (Expecting
+                    x 10 times returns in 10 Years)</a></h4>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative  align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-hand-thumbs-up-fill flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Your capital Investment will be back in your hands on 7 Years.</a>
+                </h4>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative  align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Be support to agriculture and green revolution.</a></h4>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- End Services Section -->
     <section id="services" class="services section-bg3" style="padding-top: 40px;">
@@ -273,270 +340,51 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Alt Services Section ======= -->
-    <section id="alt-services" class="alt-services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services.jpg);" data-aos="zoom-in"
-            data-aos-delay="100"></div>
-
-          <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus
-              laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-easel flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                  non provident</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-patch-check flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti atque</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Dine Pad</a></h4>
-                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus
-                  aut eligendi omnis</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Tride clov</a></h4>
-                <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet.
-                  Et eligendi</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Alt Services Section -->
-
-
-
-    <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-blog-posts" class="recent-blog-posts">
-      <div class="container" data-aos="fade-up"">
-
-    
-    
-  <div class=" section-header">
-        <h2>Recent Blog Posts</h2>
-        <p>In commodi voluptatem excepturi quaerat nihil error autem voluptate ut et officia consequuntu</p>
-      </div>
-
-      <div class="row gy-5">
-
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="post-item position-relative h-100">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-              <span class="post-date">December 12</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="post-item position-relative h-100">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-              <span class="post-date">July 17</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-        <div class="col-xl-4 col-md-6">
-          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-              <span class="post-date">September 05</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                  class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-      </div>
-
-      </div>
     </section>
-    <!-- End Recent Blog Posts Section -->
-
+    <!-- End Services Section -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-
     <div class="footer-content position-relative">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>UpConstruction</h3>
+              <h3>Green Revolution <span class="" style="color:#ffc732">Techagrofarms</span> LLP</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                Sri Sai Square, Valasaravakkam, Chennai<br><br>
+                <strong>Phone:</strong> +91 9789785978<br>
+                <!-- <strong>Email:</strong> info@example.com<br> -->
               </p>
-              <div class="social-links d-flex mt-3">
+              <!-- <div class="social-links d-flex mt-3">
                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> -->
             </div>
           </div><!-- End footer info column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-          </div><!-- End footer links column-->
+          </div>
+          <!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
-            </ul>
-          </div><!-- End footer links column-->
+          </div>
+          <!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
-            <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
-            </ul>
-          </div><!-- End footer links column-->
+          </div>
+          <!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
-            <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
-            </ul>
+            <img src="assets/img/bg/newlogobg.png" alt="" style="width:100%">
           </div><!-- End footer links column-->
 
         </div>
       </div>
     </div>
-
-    <div class="footer-legal text-center position-relative">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-    </div>
-
   </footer>
   <!-- End Footer -->
 

@@ -156,3 +156,16 @@
     padding-top:20px;
   }
 }
+
+#bg-video {
+  min-width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.bl-border {
+  border-left: 2px solid gold;
+}
