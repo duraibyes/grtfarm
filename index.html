@@ -426,11 +426,96 @@
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-  <a href="javascript:void(0)" onclick="enquiry()" class="enquiry-btn btn">Enquiry</a>
+  <a href="javascript:void(0)" onclick="enquiry()" class="enquiry-btn btn" >Enquiry</a>
 
   <div id="preloader"></div>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Enquire Now</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"  onclick="closeModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="" id="enquiry_form">
+            <div class="row py-2">
+              <div class="col-sm-6">
+                <label for="">Name <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" name="name" id="name" class="form-control" required>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col-sm-6">
+                <label for="">Phone No <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" name="phone_no" id="phone_no" class="form-control" required>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col-sm-6">
+                <label for="">Company Name <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" name="company_name" id="company_name" class="form-control" required>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col-sm-6">
+                <label for="">Job Title <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" name="job_title" id="job_title" class="form-control" required>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col-sm-6">
+                <label for="">Are you looking to invest? <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-sm-6">
+                <select name="looking" id="looking" class="form-control" required>
+                  <option value="">-select-</option>
+                  <option value="immediate">Immediate</option>
+                  <option value="sometime_later">Sometime Later</option>
+                </select>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col-sm-6">
+                <label for="">How much would you like to invest? <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-sm-6">
+                <select name="invest" id="invest" class="form-control" required>
+                  <option value="">-select-</option>
+                  <option value="50_lakhs">50 Lakhs</option>
+                  <option value="1_crore">1 Crore</option>
+                  <option value="1.5_crore">1.5 Crore</option>
+                  <option value="2_crore">2 Crore</option>
+                  <option value="2.5_crore">2.5 Crore</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">Close</button>
+          <button type="button" class="btn btn-success">Enquire Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -444,6 +529,12 @@
   <script>
     function enquiry() {
       console.log('clicked');
+      $('#exampleModal').modal('show');
+
+    }
+
+    function closeModal() {
+      $('#exampleModal').modal('hide');
     }
   </script>
 </body>
