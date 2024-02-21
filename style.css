@@ -134,6 +134,9 @@
 .logo-class {
   position: absolute;
 }
+.logo-class > a {
+  width: 91px;
+}
 
 .logo-class > a > img {
   max-height: 150px;
@@ -147,12 +150,23 @@
   .logo-class {
     position: unset;
     margin: 0;
+    padding-left: 10px !important;
+
+  }
+  .logo-class > a {
+    width: 190px;
   }
   .logo-class > a > img {
-    max-height: 65px;
+    max-height: 95px;
   }
   .section-bg4 {
     padding-top: 20px;
+  }
+  .header {
+    padding: 15px 5px !important;
+  }
+  .section-1 {
+    padding-top:120px;
   }
 }
 
@@ -185,8 +199,8 @@ tbody, td, tfoot, th, thead, tr {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  background: #11b334;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-secondary);
   box-shadow: 1px 2px 13px 3px #9add9a;
 }
 
@@ -199,4 +213,34 @@ button.close {
 .modal-content {
   box-shadow: 2px 0px 2px 3px #496e49;
   /* background: #08ec0030; */
+}
+
+.sections-2 {
+  background-image: url(images/bg_1.jpg);
+  background-position: center;
+  position: relative;
+  padding: 0px;
+}
+
+.section2-img {
+  width: 100%;
+}
+
+.sections-2-content {
+  background: rgba(0, 0, 0, 66%);
+  color: #f1f1f1;
+  /* width: 100%; */
+  padding: 20px;
+  height: 100%;
+}
+
+.section-2-border-img {
+  border-image: url(assets/img/bg/ll.png);
+  border-image-repeat: repeat;
+  border-image-width: 12px 0 0 0;
+  border-image-slice: 100;
+}
+
+.alt-services .icon-box:hover {
+  background: var(--color-fourth);
 }
