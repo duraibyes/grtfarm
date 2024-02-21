@@ -28,6 +28,7 @@
   --color-primary-2: #3abe6b;
   --color-match-1: #766a4c;
   --color-header: #efdc58;
+  --color-header-1: #4f414d;
 }
 
 /* Smooth scroll behavior */
@@ -1149,6 +1150,16 @@ section {
   position: relative;
 }
 
+.diff-services h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #230c1a;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  text-shadow: 1px 1px 1px #198754;
+}
+
 .alt-services h3:after {
   content: "";
   position: absolute;
@@ -1165,6 +1176,7 @@ section {
   background: #f7f7f7;
   box-shadow: 1px 1px 1px 1px var(--color-primary-1);
   border-radius: 5px;
+  padding: 15px 5px;
 }
 
 .alt-services .icon-box i {

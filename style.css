@@ -151,7 +151,6 @@
     position: unset;
     margin: 0;
     padding-left: 10px !important;
-
   }
   .logo-class > a {
     width: 190px;
@@ -166,7 +165,7 @@
     padding: 15px 5px !important;
   }
   .section-1 {
-    padding-top:120px;
+    padding-top: 120px;
   }
 }
 
@@ -190,7 +189,12 @@ table {
   margin: 25px;
 }
 
-tbody, td, tfoot, th, thead, tr {
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
   padding: 5px 0px;
   border-bottom: 1px solid #ddd;
 }
@@ -230,7 +234,7 @@ button.close {
   background: rgba(0, 0, 0, 66%);
   color: #f1f1f1;
   /* width: 100%; */
-  padding: 20px;
+  padding: 40px 20px;
   height: 100%;
 }
 
@@ -243,4 +247,35 @@ button.close {
 
 .alt-services .icon-box:hover {
   background: var(--color-fourth);
+}
+
+.poly-service {
+  padding: 20px 0px 40px 0px;
+}
+
+.poly-service h3 {
+  color: var(--color-header-1);
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.diff-services {
+  background-image: url(assets/img/bg/greenleaves.png);
+  background-size: cover;
+}
+
+.diff-services p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #257a44;
+}
+
+.diff-services-content {
+  padding: 100px 0px;
+}
+
+.diff-services .fa-seedling {
+  background: var(--color-header);
+  padding: 5px;
+  border-radius: 15px;
 }
