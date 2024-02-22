@@ -2618,7 +2618,7 @@ section {
   background: url("../../images/footer.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
-  padding: 80px 0 60px 0;
+  padding: 40px 0 60px 0;
   position: relative;
 }
 
@@ -2630,7 +2630,7 @@ section {
 }
 
 .footer .footer-content .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .footer .footer-content .footer-info h3 {
@@ -2681,7 +2681,8 @@ section {
 }
 
 .footer .footer-content .footer-links {
-  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .footer .footer-content .footer-links ul {
