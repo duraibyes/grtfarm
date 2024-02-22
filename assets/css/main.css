@@ -69,7 +69,7 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -1144,7 +1144,7 @@ section {
 .alt-services h3 {
   font-size: 28px;
   font-weight: 700;
-  color: var(--color-header);
+  color: var(--color-header-1);
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;

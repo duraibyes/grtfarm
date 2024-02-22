@@ -185,7 +185,7 @@
 table {
   width: 100%;
   font-size: 14px;
-  color: #184818;
+  color: var(--color-secondary);
   margin: 25px;
 }
 
@@ -238,6 +238,10 @@ button.close {
   height: 100%;
 }
 
+.sections-2 h3 {
+  color: var(--color-header);
+}
+
 .section-2-border-img {
   border-image: url(assets/img/bg/ll.png);
   border-image-repeat: repeat;
@@ -278,4 +282,101 @@ button.close {
   background: var(--color-header);
   padding: 5px;
   border-radius: 15px;
+}
+
+.invest-service {
+  background-image: url(images/images.jpg);
+  background-size: cover;
+}
+
+.invest-content {
+  background: rgba(0, 0, 0, 66%);
+  color: #f1f1f1;
+  /* width: 100%; */
+  padding: 40px 20px;
+  height: 100%;
+}
+
+.invest-service h3 {
+  color: var(--color-header);
+}
+
+.invest-note {
+  background: #f5f6f7;
+  color: #1f4d1d;
+  font-weight: 500;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 1px 1px 1px 1px #dc3545;
+  position: relative;
+  animation: investani 5s infinite;
+}
+
+@keyframes investani {
+  0% {
+    color: #1f4d1d;
+  }
+  25% {
+    color: #f77d0a;
+  }
+  50% {
+    color: #fd0101;
+  }
+  75% {
+    color: #f77d0a;
+  }
+  100% {
+    color: #1f4d1d;
+  }
+}
+
+.procedure-service h3 {
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
+
+.procedure-service .card-header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.procedure-service ul li > div {
+  font-size: 15px;
+  font-weight: 500;
+  color: #11452d;
+}
+
+.return-services {
+  background-image: url(assets/img/bg/ri.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+}
+
+.return-services h3 {
+  text-align: center;
+}
+
+.return-services h3:after {
+  left: 45%;
+}
+
+.r-content {
+  padding: 0px 35px;
+}
+
+.return-table {
+  margin: 0px;
+  color: var(--color-header-1);
+}
+.return-table tbody,
+td,
+th {
+  border-bottom: 1px solid rgb(155 80 29);
+}
+.return-notes {
+  font-weight: 500;
+  color: #9c5321;
 }
