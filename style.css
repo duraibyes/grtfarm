@@ -469,3 +469,9 @@ th {
     padding: 0px 22px;
   }
 }
+
+
+.poly-service p {
+  margin-top: 5px;
+  font-weight: 500;
+}
