@@ -135,7 +135,7 @@
   position: absolute;
 }
 .logo-class > a {
-  width: 91px;
+  /* width: 91px; */
 }
 
 .logo-class > a > img {
@@ -166,6 +166,12 @@
   }
   .section-1 {
     padding-top: 120px;
+  }
+}
+
+@media screen and (min-width: 1078px) {
+  .section-1 {
+    padding-top: 150px;
   }
 }
 
@@ -223,6 +229,8 @@ button.close {
   background-image: url(images/bg_1.jpg);
   background-position: center;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 0px;
 }
 
@@ -254,7 +262,8 @@ button.close {
 }
 
 .poly-service {
-  padding: 20px 0px 40px 0px;
+  padding: 20px 20px 40px 20px;
+  background: linear-gradient(45deg, rgb(229 175 29 / 97%), #c5f9e5);
 }
 
 .poly-service h3 {
@@ -303,7 +312,7 @@ button.close {
 
 .invest-note {
   /* background: #f5f6f7; */
-  background-image: linear-gradient(45deg, black, #0000003b);
+  background-image: linear-gradient(45deg, #f5f6f7, #e9fff5);
   color: #1f4d1d;
   font-weight: 500;
   padding: 6px;
@@ -384,4 +393,79 @@ th {
 
 .footer-links img {
   width: 50%;
+}
+
+.has-error {
+  border: 1px solid #dc3545;
+}
+
+.sections-2 p {
+  color: var(--color-header-1);
+}
+
+@media screen and (min-width: 900px) {
+  .invest-inner-content-data {
+    flex: 45%;
+    margin: 9px;
+    width: 100%;
+  }
+
+  .invest-inner-content {
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sections-2-content-list {
+    padding: 0px 80px;
+  }
+
+  .header {
+    background: white;
+    padding: 80px 13px;
+    top: 5px;
+    box-shadow: 0px 1px 0px 1px #88c388;
+  }
+
+  .diff-services-content-data {
+    padding: 0px 120px;
+  }
+
+  .footer-links img {
+    width: 90%;
+  }
+}
+
+.bg-sec1 {
+  background: #fff7ec !important;
+}
+
+.bg-sec2 {
+  background: linear-gradient(60deg, #7ce9ff, #fdfdfd) !important;
+}
+
+.bg-sec3 {
+  background: linear-gradient(45deg, #ffeaab, rgb(243 195 64)) !important;
+}
+
+.bg-sec4 {
+  background: linear-gradient(301deg, #ff7d1e, #f27474) !important;
+}
+
+.bg-sec4 p {
+  color: #fdfffe;
+}
+.bg-sec5 {
+  background: #c3f5b7 !important;
+}
+
+.poly-service a {
+  color: #198754 !important;
+}
+
+@media screen and (max-width: 720px) {
+  .poly-content {
+    padding: 0px 22px;
+  }
 }
