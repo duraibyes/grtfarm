@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    href="assets/fonts/googlefont.css"
     rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
@@ -32,15 +32,15 @@
   <link href="assets/css/main.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/sweetalert.js"></script>
 
 </head>
 
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center px-5">
-    <div class="container-fluid container-xl d-flex header-logo">
+    <div class="container-fluid container-xl d-flex header-logo justify-content-between align-items-center">
       <div class="logo-class" style="top: 1px">
         <a href="#" class="d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
@@ -48,18 +48,29 @@
           <!-- <h1>Green Revolution Techagrofarms<span>.</span></h1> -->
         </a>
       </div>
+      <div class="num-pane">
+        <div class="d-flex align-items-center">
+          <span class="num-span-icon">
+            <i class="fa fa-phone"></i>
+          </span>
+          <span class="num-span">
+            9789785978
+          </span>
+        </div>
+      </div>
     </div>
   </header>
   <!-- End Header -->
 
   <section class="section-1" style="padding-bottom: 0px">
     <div class="main-banner" id="top">
-      <video autoplay muted loop controls id="bg-video">
+      <img src="assets/img/bg/bg2.jpeg" class="bg-banner" alt="" width="100%">
+      <!-- <video autoplay muted loop controls id="bg-video">
         <source src="images/banner1.mp4" type="video/mp4" />
-      </video>
+      </video> -->
       <div class="video-overlay header-text">
         <div class="caption">
-          <!-- <h2>Title</h2> -->
+          <h2>Revenue of Interest 12% per Annum</h2>
         </div>
       </div>
     </div>
@@ -79,7 +90,7 @@
 
             <div class="col-lg-12 col d-flex flex-column justify-content-center">
               <div>
-                <h3 class="">Why Invest in GRT (Green Revolution Technology) </h3>
+                <h3 class="grt-header">Why Invest in GRT (Green Revolution Technology) </h3>
               </div>
               <div class="invest-inner-content">
 
@@ -156,10 +167,10 @@
               <div class="invest-inner-content">
 
                 <div class="icon-box d-flex position-relative invest-inner-content-data " data-aos="fade-up" data-aos-delay="100">
-                  <i class="bi bi-easel flex-shrink-0"></i>
+                  <i class="bi bi-easel flex-shrink-0 text-1"></i>
                   <div>
                     <h4>
-                      <a href="javascript:void(0)" class="stretched-link">
+                      <a href="javascript:void(0)" class="stretched-link" style="color: #0d6efd !important;">
                         What is a Polyhouse and Why Opt for It?
                       </a>
                     </h4>
@@ -190,10 +201,10 @@
                 <!-- End Icon Box -->
   
                 <div class="icon-box d-flex position-relative invest-inner-content-data " data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-brightness-high flex-shrink-0"></i>
+                  <i class="bi bi-brightness-high flex-shrink-0 text-danger"></i>
                   <div>
                     <h4>
-                      <a href="javascript:void(0)" class="stretched-link">Control</a>
+                      <a href="javascript:void(0)" class="stretched-link" style="color:#dc3545 !important">Control</a>
                     </h4>
                     <p>
                       With polyhouse farming, you gain precise control over the growing environment. This control allows
@@ -219,7 +230,7 @@
                 farming
               </h3>
             </div>
-            <div class="d-flex mt-0">
+            <div class="d-flex mt-0 diff-div">
               <div class="col-sm-6 pe-2">
                 <p>
                   <span class="diff-point pe-3">
@@ -276,8 +287,11 @@
             <h3>How much Should I Invest & How ?</h3>
             <div class="d-flex position-relative align-items-center" data-aos="fade-up" data-aos-delay="100">
               <div>
-                <p>
-                  Your investment can be from 50 Lakhs and upto 2.5 Crores.
+                <p class="i-text">
+                  Your investment can be from <span class="text-success">
+                    50 Lakhs and upto 2.5 Crores.
+
+                  </span>
                 </p>
                 <p>Let's see a calculation for 50 Lakhs.</p>
                 <table class="invest-table">
@@ -397,6 +411,11 @@
         </div>
       </div>
     </section>
+
+    <section id="youtube-vidoe">
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/dWCJSlXl8qw?si=G3KbQTQ8DWUwg0zk">
+      </iframe>
+    </section>
   </main>
   <!-- End #main -->
   <!-- ======= Footer ======= -->
@@ -510,7 +529,7 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" onclick="submitEnquiry()" class="btn btn-success">
+          <button type="button" onclick="submitEnquiry()" id="submit-btn" class="btn btn-success">
             Enquire Now
           </button>
         </div>
@@ -519,11 +538,9 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
+  <script src="assets/js/popper.min.js"></script>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -561,7 +578,7 @@
         { id: "looking", value: looking },
         { id: "invest", value: invest }
       ];
-
+      
       var isValid = true;
       console.log(inputs)
       inputs.forEach(function (input) {
@@ -606,7 +623,7 @@
       if (!validate()) {
         return;
       }
-
+      $('#submit-btn').attr('disabled', true);
       // If validation passes, proceed with AJAX call
       var formData = $('#enquiry_form').serialize();
 
@@ -620,6 +637,7 @@
           $('#enquiry_form')[0].reset();
           closeModal();
           if (res) {
+            $('#submit-btn').attr('disabled', false);
             Swal.fire({
               title: "Your Enquiry sent successfully!",
               text: "Thank You",
